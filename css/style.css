@@ -1,0 +1,159 @@
+body,ul,li,dl,dt,dd,input,form,h1,h2,h3,h4{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+img{
+	display: block;
+	border: none;
+}
+body{
+	font-family: "微软雅黑";
+	height: 1000px;
+}
+.clearfix:after {
+            content: ".";
+            clear: both;
+            display: block;
+            overflow: hidden;
+            font-size: 0;
+            height: 0;
+        }
+
+.clearfix{
+            zoom: 1;
+        }
+
+.header-container{
+	width: 100%;
+	background: #002A56;
+}
+.topBj{
+	background-color: rgba(0,0,0,.2);
+	width: 100%;
+}
+.top{
+	width: 1090px;
+	height: 30px;
+	margin: 0 auto;
+	
+}
+.t-left{
+	float: left;
+}
+.t-right{
+	float: right;
+}
+.t-left:first-child{
+	color: #7f93a9;
+    
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+}
+.t-left .sp{
+	height: 30px;
+    line-height: 30px;
+    padding-left: 15px;
+    
+}
+.t-left .sp a{
+	color: #00aeff;
+}
+
+.t-right .list li{
+	color: #7f93a9;
+	font-size: 12px;
+	
+}
+.t-right .list>li{
+	float: left;
+	height: 30px;
+    line-height: 30px;
+    position: relative;
+    cursor: pointer;
+    
+}
+.t-right .list>li span{
+	border-right:1px solid #7a92ac;
+	padding: 0 10px;
+}
+.t-right .list a{
+	color: #7f93a9;
+}
+.t-right li:last-child span{
+	padding-right: 10px;
+    
+}
+.t-right ul.sub-menu li{
+	text-align: center;
+	border: 1px solid #374254;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+	background: #011A37;
+	display: none;
+}
+.t-right ul.sub-menu li:first-child{
+	border-bottom: none;
+}
+.t-right ul.sub-menu li:hover a{
+	color: #DAE4EF;
+}
+/*顶部结束*/
+
+
+.logo-container{
+	width: 100%;
+	background: #012C60;
+	height: 150px;
+	
+}
+.logo-container .header{
+	width: 1090px;
+	height: 150px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.logo-container .h-left{
+	float: left;
+}
+.logo-container h1{
+	height: 80px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+.logo-container .h-right{
+	padding-top: 65px;
+    float: right;
+    position: relative;
+    margin-right: 60px;	
+}
+.logo-container .search{
+	background: transparent;
+    border: none;
+    border-bottom: 1px solid #33669b;
+    height: 20px;
+    padding: 0 10px;
+    color: #c9d8e6;
+    outline: none;
+    width: 250px;
+    text-indent: 1em;
+}
+.h-right .icon{
+	height: 18px;
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
+    top: 71px;
+    right: -18px;
+}
+.h-right a .icon{
+	right: -54px;
+}
+/*网页头部结束*/
