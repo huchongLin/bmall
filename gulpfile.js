@@ -38,15 +38,7 @@ gulp.task("babel",function(){
 	.pipe(uglify())
 	.pipe(gulp.dest("dist/js"))
 	.pipe(connect.reload());
-})
-gulp.task("init",["sayHi","copyHtml","copyImg","sass","babel"]);
-gulp.task("watch",function(){
-	gulp.watch("*.html",["copyHtml"]);
-	gulp.watch("js/**.js",["babel"]);
-	gulp.watch("sass/**.scss",["sass"]);
-	gulp.watch("img/**/*",["copyImg"]);
-	gulp.watch("css/**",["copyCss"])
-})
+});
 /*修改代码 start*/
 gulp.task("scripts",function(){
 	gulp.src(['js/a.js','js/b.js'])//选择要合并的js
@@ -55,8 +47,16 @@ gulp.task("scripts",function(){
 	.pipe(uglify())
 	.pipe(rename("mix.min.js"))//取一个名字（压缩过的）
 	.pipe(gulp.dest("dist/js"));
-})
+});
 /*待修改代码 end*/
+gulp.task("init",["sayHi","copyHtml","copyImg","sass","babel"]);
+gulp.task("watch",function(){
+	gulp.watch("*.html",["copyHtml","babel","sass","copyImg","copyCss"]);
+	gulp.watch("js/**.js",["babel"]);
+	gulp.watch("sass/**.scss",["copyHtml","babel","sass","copyImg","copyCss"]);
+	gulp.watch("img/**/*",["copyHtml","babel","sass","copyImg","copyCss"]);
+	gulp.watch("css/**",["copyHtml","babel","sass","copyImg","copyCss"]);
+});
 gulp.task("sever",function(){
 	connect.server({
 		root:'dist',
