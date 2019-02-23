@@ -49,7 +49,7 @@ gulp.task("scripts",function(){
 	.pipe(gulp.dest("dist/js"));
 });
 /*待修改代码 end*/
-gulp.task("init",["sayHi","copyHtml","copyImg","sass","babel"]);
+gulp.task("init",["sayHi","copyHtml","copyImg","sass","babel","copyCss"]);
 gulp.task("watch",function(){
 	gulp.watch("*.html",["copyHtml","babel","sass","copyImg","copyCss"]);
 	gulp.watch("js/**.js",["babel"]);
