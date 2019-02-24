@@ -1,0 +1,206 @@
+body,input,p{
+    margin: 0;
+    padding: 0;
+}
+img{
+    display: block;
+    border: none;
+}
+a{
+    text-decoration: none;
+}
+/* 重置样式结束 */
+body{
+    background: #EFEFEF;
+}
+.reg-container{
+
+    width: 100%;
+    min-height: 100%;
+}
+.reg-title{
+    width: 1000px;
+    margin: 35px auto 0;
+}
+.t-logo{
+    float: left;
+    width: 300px;
+    height: 60px;
+    background-position: -50px -18px;
+    background: url(../img/sprite.png) no-repeat;
+}
+.goto-login{
+    float: right;
+    padding-top: 40px;
+    font-size: 18px;
+    color: #666666;
+}
+.goto-login a{
+    color:#D05252;
+}
+.account-container{
+    width: 1000px;
+    margin: 30px auto;
+    background: #fff;
+    border-radius: 5px;
+    height: 700px;
+    margin-bottom: 100px;
+} 
+/* 表头结束 */
+
+.m-tab{
+    width: 320px;
+    height: 40px;
+    margin: 0 auto;
+    padding: 44px 0 22px;
+}
+.m-tab div{
+    float: left;
+    width: 160px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 16px;
+    color: #666666;
+    box-sizing: border-box;
+}
+.m-tab .pt{
+    background: #D05252;
+    color: #fff;
+}
+.m-tab .lh{
+    border: 1px solid #666;
+    border-left:noen;
+    color: #666;
+    cursor: pointer; 
+}
+input{
+    width: 320px;
+    height: 44px;
+    margin: 11px auto;
+    box-sizing: border-box;
+
+}
+.m-content{
+    margin-left: 291px;
+}
+.m-content .yzm,
+.m-content .hq{
+    width: 150px;
+}
+.m-content .reg{
+    margin-left:66px;
+    display: block;
+}   
+.m-content p{
+    font-size: 12px;
+    color: #666;
+    margin-left:63px; 
+}
+.m-content .teshu{
+    position: relative;
+    left: -30px;
+}
+.m-content p.blue{
+    color: #4CB5FF;
+    cursor: pointer;
+    margin-bottom: 3px;
+}
+.m-content .hq{
+    width: 130px;
+    margin-left: 20px;
+    background: #3C35FF;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+}
+.m-content .reg{
+    background: #D05252;
+    color: #fff;
+    letter-spacing: 10px;
+    font-size: 16px;
+    border: none;
+}
+.m-content .check{
+    width: 14px;
+    height: 14px;
+    margin-left: 65px;
+}
+.m-content .tiaoyue{
+    color: #666;
+    font-size: 12px;
+    margin-left: 5px;
+}
+.m-content .tiaoyue a{
+    color: #666;
+}
+.m-content .tiaoyue a:hover{
+    color: #3C35FF;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 清除浮动 */
+.clearfix:after {
+    content: ".";
+    clear: both;
+    display: block;
+    overflow: hidden;
+    font-size: 0;
+    height: 0;
+}
+
+.clearfix{
+    zoom: 1;
+}
+/* 清除浮动结束 */

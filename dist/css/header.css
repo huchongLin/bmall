@@ -1,0 +1,78 @@
+/* 头部开始 */
+.header-container{
+	width: 100%;
+	background: #002A56;
+}
+.topBj{
+	background-color: rgba(0,0,0,.2);
+	width: 100%;
+}
+.top{
+	width: 1090px;
+	height: 30px;
+	margin: 0 auto;
+	
+}
+.t-left{
+	float: left;
+}
+.t-right{
+	float: right;
+}
+.t-left:first-child{
+	color: #7f93a9;
+    
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+}
+.t-left .sp{
+	height: 30px;
+    line-height: 30px;
+    padding-left: 15px;
+    
+}
+.t-left .sp a{
+	color: #00aeff;
+}
+
+.t-right .list li{
+	color: #7f93a9;
+	font-size: 12px;
+	
+}
+.t-right .list>li{
+	float: left;
+	height: 30px;
+    line-height: 30px;
+    position: relative;
+    cursor: pointer;
+    
+}
+.t-right .list>li span{
+	border-right:1px solid #7a92ac;
+	padding: 0 10px;
+}
+.t-right .list a{
+	color: #7f93a9;
+}
+.t-right li:last-child span{
+	padding-right: 10px;
+    
+}
+.t-right ul.sub-menu li{
+	text-align: center;
+	border: 1px solid #374254;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+	background: #011A37;
+	display: none;
+}
+.t-right ul.sub-menu li:first-child{
+	border-bottom: none;
+}
+.t-right ul.sub-menu li:hover a{
+	color: #DAE4EF;
+}
+/*顶部结束*/

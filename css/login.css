@@ -10,6 +10,7 @@ body,p,input{
     background-size: cover;
     position: relative;
     height: 650px;
+    box-sizing: border-box;
 }
 .dl-container{
     position: relative;
