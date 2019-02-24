@@ -99,7 +99,14 @@ input{
 }
 .m-content .teshu{
     position: relative;
-    left: -30px;
+    left: -33px;
+}
+.m-content .dx{
+    left: -48px;
+}
+.m-content .teshu2{
+    position: relative;
+    left: -17px;
 }
 .m-content p.blue{
     color: #4CB5FF;
@@ -107,7 +114,7 @@ input{
     margin-bottom: 3px;
 }
 .m-content .hq{
-    width: 130px;
+    width: 150px;
     margin-left: 20px;
     background: #3C35FF;
     color: #fff;
@@ -120,11 +127,12 @@ input{
     letter-spacing: 10px;
     font-size: 16px;
     border: none;
+    margin-left: 48px;
 }
 .m-content .check{
     width: 14px;
     height: 14px;
-    margin-left: 65px;
+    margin-left: 49px;
 }
 .m-content .tiaoyue{
     color: #666;
