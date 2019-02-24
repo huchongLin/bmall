@@ -1,0 +1,65 @@
+/* 底部开始 */
+.footer{
+    height: 300px;
+    background: #1a1a1a;
+    color: #a6a6a6;
+    font-size: 12px;
+    text-align: center;
+    padding: 80px 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;;
+}
+.footer .fix-width{
+    width: 1090px;
+    margin: auto;
+    position: relative;
+}
+.footer .promises-list {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #2c2c2c;
+    color: #fff;
+}
+.footer .promises-list li {
+    height: 51px;
+    line-height: 51px;
+    padding-left: 80px;
+    margin-right: 80px;
+    font-size: 16px;
+   
+}
+.footer li{
+     display: inline-block;
+}
+.footer .promises-list li.official {
+    background: url(../img/bx.png) no-repeat 0 0;
+    background-size: contain;
+}
+.footer .promises-list li.return {
+    background: url(../img/wy.png) no-repeat 0 0;
+    background-size: contain;
+}
+.footer .promises-list li.shipment {
+    background: url(../img/bx.png) no-repeat 0 0;
+    background-size: contain;
+}
+.footer .promises-list li.netease {
+    background: url(../img/wy.png) no-repeat 0 0;
+    background-size: contain;
+}
+.footer .link-list {
+    padding: 15px 0 8px;
+}
+.footer .link-list li {
+    font-size: 12px;
+    padding: 0 20px;
+    border-right: 1px solid #fff;
+    height: 15px;
+    line-height: 15px;
+}
+.footer .link-list li a{
+   color: #a6a6a6; 
+} 
+.footer .licences li:last-child{
+    border: none;
+}
+/* 底部结束 */

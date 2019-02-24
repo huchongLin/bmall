@@ -1,0 +1,106 @@
+body,p,input{
+    margin: 0;
+    padding: 0;
+}
+.loginBj{
+    padding-left: 65%;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background: url(../img/loginBj.jpg) 50% no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 650px;
+}
+.dl-container{
+    position: relative;
+    width: 362px;
+    overflow: hidden;
+    border-radius: 4px;
+    background: #fff;
+}
+.dl-title{
+    color: #6F6F6F;
+    font-size: 20px;
+    width: 321px;
+    height: 25px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    margin: 30px auto;
+
+}
+/* 标题结束 */
+.m-container{
+    width: 321px;
+    margin: 0 auto;
+}
+input{
+    border:none;
+    height: 20px;
+    line-height: 20px;
+    padding-left: 8px;
+    font-size: 14px;
+    width: 233px;
+}
+.del{
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background: #ccc;
+    color: #fff;
+    text-align: center;
+    line-height: 16px;
+    font-size: 18px;
+    display: inline-block;
+    cursor: pointer;
+    visibility: hidden;
+}
+.emall,.pas{
+    width: 100%;
+    height: 30px;
+    border: 1px solid #ccc;
+    line-height: 30px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+.pas{
+    margin: 10px 0;
+
+}
+.dl-ad{
+    font-size: 12px;
+}
+.dl-ad a{
+    color:#00AEFF;
+    text-decoration: none;
+}
+.login{
+    width: 100%;
+    height: 44px;
+    background: #00AEFF;
+    color: #fff;
+    letter-spacing: 10px;
+    font-size: 18px;
+    margin: 18px 0 12px 0;
+}
+.zhuce{
+    font-size: 12px;
+    color: #ccc;
+    height: 16px;
+    padding-bottom:40px; 
+}
+.zhuce .wj{
+    float: left;
+}
+.zhuce .zc{
+    float: right;
+}
+.zhuce a{
+    color: #bcbcbc;
+    text-decoration: none;
+}
+.zhuce a:hover{
+    color:#1a1a1a;
+}
+
+
+
