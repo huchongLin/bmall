@@ -1,0 +1,62 @@
+.dat-container{
+    width: 100%;
+    min-height: 500px;
+    background: #efefef;
+}
+.dat-container .dat-fix{
+    width: 1090px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 购物车角标 */
+.cart-count{
+    left: 297px !important;
+}
+/* 购物车角标结束 */
+
+/* 清除浮动 */
+.clearfix:after {
+    content: ".";
+    clear: both;
+    display: block;
+    overflow: hidden;
+    font-size: 0;
+    height: 0;
+}
+
+.clearfix{
+    zoom: 1;
+}
+/* 清除浮动结束 */
