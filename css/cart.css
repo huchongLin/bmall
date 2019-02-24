@@ -1,0 +1,78 @@
+.cart-content{
+    background: #F9F9F9;
+    width: 100%;
+    min-height: 500px;
+    padding:50px 0;
+}
+
+.cart-table{
+    width: 1090px;
+    background: white;
+    margin: 0 auto;
+}
+.cart-table img{
+    width: 75px;
+    height: 75px;
+    display: inline-block;    
+}
+.cart-table .chkbox{
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background: #fff;
+    border: 1px solid #cecece;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.cart-table .addBtn,.cart-table .reduceBtn{
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    font-size: 24px;
+    text-align: center;
+    line-height: 16px;
+    background: #cecece;
+    color: #fff;
+    display: inline-block;
+    margin: 0 10px;
+}
+.cart-table .batchDelBtn{
+    font-size: 14px;
+    color:#00aeff;
+    cursor: pointer;
+    position: relative;
+    top: 13px;
+}
+.cart-table .total{
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+    color: #e60012;
+    font-size: 24px;
+}
+.cart-table .totalAll{
+    font-size:12px;
+    color: #666;
+}
+
+/* 购物车角标 */
+.cart-count{
+    left: 298px !important;
+}
+
+
+
+/* 清除浮动 */
+.clearfix:after {
+    content: ".";
+    clear: both;
+    display: block;
+    overflow: hidden;
+    font-size: 0;
+    height: 0;
+}
+
+.clearfix{
+    zoom: 1;
+}
+/* 清除浮动结束 */

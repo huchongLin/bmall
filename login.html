@@ -5,6 +5,7 @@
 		<title>登录</title>
 		<link rel="stylesheet" href="css/login.css" type="text/css">
 		<link rel="stylesheet" href="css/footer.css">
+		<script src="js/jquery-1.11.0.js"></script>
 	</head>
 	<body>
 		<div class="loginBj">
@@ -30,36 +31,14 @@
 				</div>
 			</div>
 		</div>
-		<!-- 底部开始 -->
-	<footer class="footer">
-			<div class="fix-width">
-				<ul class="promises-list">
-					<li class="official">官方正版周边</li>
-					<li class="return">7天无忧退货</li>
-					<li class="shipment">满88元免邮费</li>
-					<li class="netease">网易自营电商</li>
-				</ul>
-				<ul class="link-list">
-					<li><a href="#" >公司简介</a></li>
-					<li><a href="#">规则中心</a></li>
-					<li><a href="#">售后服务</a></li>
-					<li><a href="#">配送与验收</a></li>
-					<li><a href="#" >商务合作</a></li>
-					<li><a href="#" >相关法律</a></li>
-					<li><a href="#" >联系我们</a></li>
-					<li><a href="#" >加入我们</a></li>
-				</ul>
-				<ul class="link-list licences">
-					<li><a href="#"
-						 target="_blank" rel="nofollow">食品经营许可证</a></li>
-					<li><a href="#" rel="nofollow">出版物经营许可证</a></li>
-					<li><a href="#" rel="nofollow">营业执照</a></li>
-					<li>网易公司版权所有 © 1997-2019 浙出发滨零字第0108号 统一社会信用代码:986543456789098765</li>
-				</ul>
-			</div>
-		</footer>
-		<!-- 底部结束 -->
-
+		<!-- 公用底部开始 -->
+		<div id="foot"></div>
+		<!-- 公用底部结束 -->
+		<script>
+			$(function(){
+				$("#foot").load("footer.html");
+			});
+		</script>
 
 	</body>
 </html>

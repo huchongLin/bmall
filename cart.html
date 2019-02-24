@@ -3,7 +3,83 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>购物车</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/header.css">
+		<link rel="stylesheet" href="css/footer.css">
+		<link rel="stylesheet" href="css/cart.css">
+		<script src="js/jquery-1.11.0.js"></script>
 	</head>
 	<body>
+		<!-- 公用头部 -->
+		<div id="head"></div>
+		<!-- 公用头部结束 -->
+
+		<div class="cart-content">
+			<table class="table table-hover cart-table clearfix">
+				<tr>
+					<th>
+						<input class="chkbox" type="checkbox">全选
+					</th>
+					<th>商品信息</th>
+					<th> </th>
+					<th>单价</th>
+					<th>数量</th>
+					<th>小计</th>
+					<th>活动</th>
+
+				</tr>
+				<tr>
+					<td><input class="chkbox"  type="checkbox"></td>
+					<td>
+						<img src="img/shopping.jpg"/>
+					</td>
+					<td>
+						<span>魔兽世界 伊利丹 怒风雕像</span><br/>
+						<span>伊利丹雕像</span>
+					</td>
+					<td>￥2999.00</td>
+					<td>
+						<span class="reduceBtn">-</span>
+						<span>1</span>
+						<span class="addBtn">+</span>
+					</td>
+					<td>
+						<span>￥2999.00</span>
+					</td>
+					<td>
+						<input type="button" class="btn btn-info" value="删除">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input class="chkbox" type="checkbox">已选（<span>0</span>）
+					</td>
+					<td>
+						<span class="batchDelBtn">
+							批量删除
+						</span>
+					</td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>
+						<p>应付金额：<span class="total">￥0</span></p>
+						<p class="totalAll">商品合计：<span >￥2999</span></p>
+					</td>
+					<td>
+						<input class="btn btn-primary" type="button" value="下单">
+					</td>
+				</tr>
+			</table>
+		</div>
+		<!-- 公用底部 -->
+		<div id="foot"></div>
+		<!-- 公用底部结束 -->
+		<script type="text/javascript">
+			$(function(){
+				$("#head").load("header.html");
+				$("#foot").load("footer.html");
+			});
+		</script>
 	</body>
 </html>
