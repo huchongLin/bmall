@@ -4,7 +4,7 @@ $(function(){
     // 用户名验证
     $("#userName").blur(function(){
         if($("#userName").val().trim().length<1){
-            $("#userTip").html("请填写用户邮箱！").addClass("red");
+            $("#userTip").html("请填写用户名！").addClass("red");
             flag = false;
         }else{
             $("#userTip").html(" ");
@@ -197,14 +197,14 @@ $(function(){
                 "sex":"女"
             },function(data){
             //console.log(data,data.code);
-            console.log(data,data.code);
+            //console.log(data,data.code);
             if(!data.code){
-                alert("注册失败，请重试");
+                alert("注册成功");
             }else{
-                alert("注册成功，点击确定跳转登录页！")
-                window.location.href="login.html";
+                alert("注册失败，请重试")
             }
-        })
+        });
+        window.location.href="login.html";
         }else{
             alert("请填入正确信息")
         }
