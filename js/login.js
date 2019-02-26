@@ -2,7 +2,7 @@ $(function () {
      // 用户名验证
     var flag = true;
     $("#userName").change(function () {
-        console.log('aa');
+        //console.log('aa');
         if ($("#userName").val().trim().length < 1) {
              alert("请输入用户名！");
              flag = false;
@@ -68,7 +68,7 @@ $(function () {
                 "password":$("#pas").val()
             },function(data){
             //console.log(data,data.code);
-            console.log(data,data.code);
+            //console.log(data,data.code,data.data,data.data.token);
             if(!data.code){
                 alert("登录成功,点击确定跳转到首页");
                 window.location.href="index.html";
@@ -78,7 +78,7 @@ $(function () {
         });
         //window.location.href="login.html";
         }else{
-            alert("请填入正确信息")
+            alert("请填入正确信息！")
         }
     })
 

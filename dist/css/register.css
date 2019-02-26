@@ -43,7 +43,7 @@ body{
     margin: 30px auto;
     background: #fff;
     border-radius: 5px;
-    height: 700px;
+    height: 800px;
     margin-bottom: 100px;
 } 
 /* 表头结束 */
@@ -83,6 +83,9 @@ input{
 }
 .m-content{
     margin-left: 291px;
+}
+.m-content #userName{
+    margin-left: -14px;
 }
 .m-content .yzm,
 .m-content .hq{
@@ -129,6 +132,8 @@ input{
     font-size: 16px;
     border: none;
     margin-left: 48px;
+    cursor: pointer;
+    
 }
 .m-content .check{
     width: 14px;
@@ -146,7 +151,15 @@ input{
 .m-content .tiaoyue a:hover{
     color: #3C35FF;
     font-weight: bold;
-
+}
+.m-content #yanzhengma{
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    display: none;
+}
+span.red{
+    color: #e00;
 }
 
 

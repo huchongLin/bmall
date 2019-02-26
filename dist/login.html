@@ -6,6 +6,7 @@
 		<link rel="stylesheet" href="css/login.css" type="text/css">
 		<link rel="stylesheet" href="css/footer.css">
 		<script src="js/jquery-1.11.0.js"></script>
+		<script src="js/login.js"></script>
 	</head>
 	<body>
 		<div class="loginBj">
@@ -13,17 +14,17 @@
 				<p class="dl-title">欢迎登陆网易邮箱账号</p>
 				<div class="m-container">
 					<div class="emall">
-						<span>邮箱</span> <input type="text" placeholder="邮箱"/><span class="del">x</span>
+						<span>用户名</span> <input id="userName" type="text" placeholder="请输入用户名"/><span class="del">x</span>
 					</div>
 					<div class="pas">
-						<span>密码</span> <input type="password" placeholder="密码"/><span class="del">x</span>
+						<span>密码</span> <input id="pas" type="password" placeholder="密码"/><span class="del">x</span>
 					</div>
 					<p class="dl-ad">
 						<span>盾</span>
 						使用<a href="#">网易账号管家</a>,全面保护您的账号！
 
 					</p>
-					<input class="login" type="button" value="登录">
+					<input id="btnLogin" class="login" type="button" value="登录">
 					<div class="zhuce">
 						<div class="wj"><a href="#">忘记密码？</a></div>
 						<div class="zc"><a href="register.html">去注册</div>
