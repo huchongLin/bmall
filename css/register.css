@@ -43,7 +43,7 @@ body{
     margin: 30px auto;
     background: #fff;
     border-radius: 5px;
-    height: 700px;
+    height: 800px;
     margin-bottom: 100px;
 } 
 /* 表头结束 */
@@ -79,10 +79,13 @@ input{
     height: 44px;
     margin: 11px auto;
     box-sizing: border-box;
-
+    padding-left: 10px;
 }
 .m-content{
     margin-left: 291px;
+}
+.m-content #userName{
+    margin-left: -14px;
 }
 .m-content .yzm,
 .m-content .hq{
@@ -120,6 +123,7 @@ input{
     color: #fff;
     font-size: 16px;
     border: none;
+    text-indent: 0;
 }
 .m-content .reg{
     background: #D05252;
@@ -128,6 +132,8 @@ input{
     font-size: 16px;
     border: none;
     margin-left: 48px;
+    cursor: pointer;
+    
 }
 .m-content .check{
     width: 14px;
@@ -144,58 +150,17 @@ input{
 }
 .m-content .tiaoyue a:hover{
     color: #3C35FF;
-
+    font-weight: bold;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.m-content #yanzhengma{
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    display: none;
+}
+span.red{
+    color: #e00;
+}
 
 
 /* 清除浮动 */
