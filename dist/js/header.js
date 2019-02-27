@@ -1,0 +1,1 @@
+"use strict";$(function(){$("#navList li").hover(function(){$(this).find("span").addClass("hover").next().fadeIn().end().parent().siblings().find("span").removeClass("hover")},function(){$(this).find("span").removeClass("hover").next().fadeOut()}),$(window).scroll(function(){300<=$(this).scrollTop()?$("#h-nav").addClass("navFix"):$("#h-nav").removeClass("navFix")})});

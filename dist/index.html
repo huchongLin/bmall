@@ -56,10 +56,10 @@
 		<!--网页头部结束-->
 	</header>
 	<!-- 导航开始 -->
-	<nav class="mask">
+	<nav class="mask" id="h-nav">
 		<div class="fix-width m-bj">
-			<ul class="nav">
-				<li class="home"><a href="index.html">首页</li>
+			<ul class="nav" id="navList">
+				<li class="home "><a href="index.html">首页</li>
 				<li> <span>居家生活</span>
 					<div class="sub-category-container">
 						<ul class="sub-category-list fix-width">
@@ -76,6 +76,7 @@
 						<ul class="sub-category-list fix-width">
 							<li class="sub-category-item"><img class="sub-category-icon" src="img/dh1.png" alt="二级分类图标"><span class="display-block">电脑外设</span></li>
 							<li class="sub-category-item"><img class="sub-category-icon" src="img/dh5.png" alt="二级分类图标"><span class="display-block">鼠标垫</span></li>
+							<li class="sub-category-item"><img class="sub-category-icon" src="img/dh5.png" alt="二级分类图标"><span class="display-block">充电宝</span></li>
 							<li class="sub-category-item"><img class="sub-category-icon" src="img/dh3.png" alt="二级分类图标"><span class="display-block">U盘存储</span></li>
 							<li class="sub-category-item"><img class="sub-category-icon" src="img/dh4.png" alt="二级分类图标"><span class="display-block">手机壳</span></li>
 							<li class="sub-category-item"><img class="sub-category-icon" src="img/dh2.png" alt="二级分类图标"><span class="display-block">充电宝</span></li>
@@ -91,23 +92,69 @@
 							<li class="sub-category-item"><img class="sub-category-icon" src="img/dh1.png" alt="二级分类图标"><span class="display-block">鼠标垫</span></li>
 							<li class="sub-category-item"><img class="sub-category-icon" src="img/dh2.png" alt="二级分类图标"><span class="display-block">U盘存储</span></li>
 							<li class="sub-category-item"><img class="sub-category-icon" src="img/dh3.png" alt="二级分类图标"><span class="display-block">手机壳</span></li>
-							<li class="sub-category-item"><img class="sub-category-icon" src="img/dh4.png" alt="二级分类图标"><span class="display-block">充电宝</span></li>
+						
 						</ul>
 					</div>
 				</li>
-				<li> <span>配饰挂件</span></li>
-				<li> <span>服装服饰</span></li>
-				<li> <span>图书文具</span></li>
+				<li> <span>配饰挂件</span>
+					<div class="sub-category-container">
+							<ul class="sub-category-list fix-width">
+								<li class="sub-category-item"><img class="sub-category-icon" src="img/dh1.png" alt="二级分类图标"><span class="display-block">电脑外设</span></li>
+								<li class="sub-category-item"><img class="sub-category-icon" src="img/dh2.png" alt="二级分类图标"><span class="display-block">鼠标垫</span></li>
+								<li class="sub-category-item"><img class="sub-category-icon" src="img/dh5.png" alt="二级分类图标"><span class="display-block">充电宝</span></li>
+								<li class="sub-category-item"><img class="sub-category-icon" src="img/dh3.png" alt="二级分类图标"><span class="display-block">U盘存储</span></li>
+								<li class="sub-category-item"><img class="sub-category-icon" src="img/dh4.png" alt="二级分类图标"><span class="display-block">手机壳</span></li>
+								<li class="sub-category-item"><img class="sub-category-icon" src="img/dh5.png" alt="二级分类图标"><span class="display-block">充电宝</span></li>
+							</ul>
+						</div></li>
+				<li> <span>服装服饰</span>
+					<div class="sub-category-container">
+							<ul class="sub-category-list fix-width">
+								<li class="sub-category-item"><img class="sub-category-icon" src="img/dh1.png" alt="二级分类图标"><span class="display-block">电脑外设</span></li>
+								<li class="sub-category-item"><img class="sub-category-icon" src="img/dh2.png" alt="二级分类图标"><span class="display-block">鼠标垫</span></li>
+								<li class="sub-category-item"><img class="sub-category-icon" src="img/dh3.png" alt="二级分类图标"><span class="display-block">U盘存储</span></li>
+								<li class="sub-category-item"><img class="sub-category-icon" src="img/dh4.png" alt="二级分类图标"><span class="display-block">手机壳</span></li>
+							
+							</ul>
+						</div></li>
+				<li> <span>图书文具</span>
+					<div class="sub-category-container">
+							<ul class="sub-category-list fix-width">
+								<li class="sub-category-item"><img class="sub-category-icon" src="img/dh1.png" alt="二级分类图标"><span class="display-block">电脑外设</span></li>
+								<li class="sub-category-item"><img class="sub-category-icon" src="img/dh2.png" alt="二级分类图标"><span class="display-block">鼠标垫</span></li>
+								<li class="sub-category-item"><img class="sub-category-icon" src="img/dh5.png" alt="二级分类图标"><span class="display-block">充电宝</span></li>
+								<li class="sub-category-item"><img class="sub-category-icon" src="img/dh3.png" alt="二级分类图标"><span class="display-block">U盘存储</span></li>
+								<li class="sub-category-item"><img class="sub-category-icon" src="img/dh5.png" alt="二级分类图标"><span class="display-block">充电宝</span></li>
+								<li class="sub-category-item"><img class="sub-category-icon" src="img/dh4.png" alt="二级分类图标"><span class="display-block">手机壳</span></li>
+								<li class="sub-category-item"><img class="sub-category-icon" src="img/dh5.png" alt="二级分类图标"><span class="display-block">充电宝</span></li>
+							</ul>
+						</div>
+				</li>
 			</ul>
 		</div>
 	</nav>
 	<!-- 导航部分结束 -->
 
 	<!-- 轮播图部分开始 -->
-	<div class="banner">
-			<a href="libs.html"><div class="slide"></div></a>
+	<div class="banner" id="banner">
+		<div class="slide">
+			<ul class="pic">
+				<li><a href="libs.html"> <img src="img/banner1.jpg" alt=""></a></li>
+				<li><a href="libs.html"> <img src="img/banner2.jpg" alt=""></a></li>
+				<li><a href="libs.html"> <img src="img/banner3.jpg" alt=""></a></li>
+				<li><a href="libs.html"> <img src="img/banner4.jpg" alt=""></a></li>
+			</ul>
+		</div>
+		<div class="sel" id="jiaobiao">
+			<ul id="selList">
+				<li class="select"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
 	</div>
-	<!-- 轮播图结束 -->
+	<!-- 轮播图结束la -->
 
 	<div class="content">
 		<!-- 游戏列表开始 -->

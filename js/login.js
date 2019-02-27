@@ -9,14 +9,6 @@ $(function () {
         }else{
             flag = true;
         }
-        var reg0 = /^[a-zA-Z][a-zA-Z0-9]{3,15}$/;
-        var userName = $("#userName").val();
-        if (!reg0.test(userName)) {
-             alert("用户名不符合规则");
-             flag = false;
-        }else{
-            flag = true;
-        }
         
         //调用接口验证
         $.get("http://47.104.244.134:8080/username.do", {
@@ -46,7 +38,7 @@ $(function () {
     })
 
     //登录验证
-        //如果输入框为空  不允许登录
+        /如果输入框为空  不允许登录
     if($("input").val().length<1){
         flag = false;
     }else{
@@ -78,7 +70,7 @@ $(function () {
         });
         //window.location.href="login.html";
         }else{
-            alert("请填入正确信息！")
+            alert("请检查您的用户名或者密码是否填写正确");
         }
     })
 

@@ -170,11 +170,21 @@ body{
 	background: #01244D;
 	position: relative;
 }
-.mask .fix-width{
+.fix-width{
 	width: 1090px;
 	height: 40px;
 	margin: 0 auto;
 }
+
+/* 顶部固定 */
+.navFix{
+    position: fixed !important;
+    z-index: 1000;
+    opacity: .8;
+    top: 0;
+}
+/* 顶部固定结束 */
+
 .mask>ul{
 	cursor: pointer;
     font-size: 15px;
@@ -232,17 +242,38 @@ body{
     cursor: pointer;
     height: 420px;
 }
+
 .banner .slide{
-	position: absolute;
-    top: 0;
-    width: 100%;
-    height: 420px;
-    background-position: 50%;
-    background-repeat: no-repeat;
-	background-size: cover;
-	background-image:url("../img/banner1.jpg"); 
+    width:100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    
 }
-/* 轮播部分，未完待续 */
+.banner .slide ul li{
+    position: absolute;
+    display: none;
+}
+
+.banner .sel{
+    position: absolute;
+    bottom: 10px;
+}
+.banner .sel li{
+    float: left;
+    width: 100px;
+    height: 5px;
+    margin-left:20px;
+    border-radius:5px;
+    background: hsla(184,7%,43%,.5);
+    display: inline-block;
+}
+/* 角标选中 */
+.banner .sel li.select{
+    background: #2093c9;
+}
+/* 角标选中结束 */
+/* 轮播部分结束*/
 
 .content{
 	width: 1090px;
