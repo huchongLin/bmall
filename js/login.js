@@ -38,7 +38,7 @@ $(function () {
     })
 
     //登录验证
-        /如果输入框为空  不允许登录
+        //如果输入框为空  不允许登录
     if($("input").val().length<1){
         flag = false;
     }else{
