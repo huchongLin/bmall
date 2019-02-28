@@ -55,6 +55,16 @@
     color: #666;
 }
 
+/* 商品名过长省略 */
+#shopTable table td span.shengLue{
+    width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+}
+/* 商品名过长省略结束 */
+
 /* 购物车角标 */
 .cart-count{
     left: 298px !important;

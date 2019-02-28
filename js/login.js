@@ -59,10 +59,12 @@ $(function () {
                 "name":$("#userName").val(),
                 "password":$("#pas").val()
             },function(data){
-            //console.log(data,data.code);
-            //console.log(data,data.code,data.data,data.data.token);
-            if(!data.code){
+            console.log(data,data.code);
+            console.log(data,data.code,data.data,data.data.token);
+            if(data.code==0){
+                $.cookie("token",data.data.token);
                 alert("登录成功,点击确定跳转到首页");
+                console.log(data,data.code,data.data.token,$("#userName").val());
                 window.location.href="index.html";
             }else{
                 alert("登录失败，请重试")

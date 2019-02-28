@@ -204,7 +204,7 @@ $(function(){
                 alert("注册失败，请重试")
             }
         });
-        window.location.href="login.html";
+        // window.location.href="login.html";
         }else{
             alert("请填入正确信息")
         }

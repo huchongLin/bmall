@@ -1,5 +1,23 @@
 $(function(){
-    
+    //判断用户是否登录
+    if($.cookie("token")){
+        $("#topList").html(`
+        <li>欢迎您，尊敬的用户${$.cookie("token")}</li>
+        <li id="zhuxiao">&nbsp;&nbsp;&nbsp;注销</li>
+        `);
+        $("#zhuxiao").click(function(){
+            $.removeCookie('token');
+            window.location.href="index.html";
+            alert("注销成功！");
+        })
+    }
+    //顶部hover事件
+    $("#subMenu").hover(function(){
+       $(this).addClass("color").find("li").fadeIn();
+    },function(){
+        $(this).removeClass("color").find("li").fadeOut();
+    })
+
     // 鼠标经过导航
     $("#navList li").hover(function(){
         $(this).find("span").addClass("hover")
