@@ -28,7 +28,7 @@ $(function(){
             </td>
             <td>
                 ￥<span>2999.00</span>
-            </td
+            </td>
             <td>
                 <input type="button" class="btn btn-info" value="删除">
             </td>
@@ -36,7 +36,7 @@ $(function(){
         
             `
         }
-        str1 =`
+        var str1 =`
         <table class="table table-hover cart-table clearfix">
         <tr>
         <th>
@@ -48,7 +48,6 @@ $(function(){
         <th>数量</th>
         <th>小计</th>
         <th>活动</th>
-
     </tr>
     ${str}
     <tr>
@@ -75,23 +74,23 @@ $(function(){
         `
         $("#shopTable").html(str1);
         
-    // 加减按钮
+        // 加减按钮
 
-    $(".addBtn").click(function(){
-        var num = $(this).prev("span").html();
-        num++;
-        $(this).prev("span").html(num);
-    });
-    $(".reduceBtn").click(function(){
-        var num = $(this).next("span").html();
-        num--;
-        if(num<2){
-            num = 1;
-        }
-        $(this).next("span").html(num);
-    });
+        $(".addBtn").click(function(){
+            var num = $(this).prev("span").html();
+            num++;
+            $(this).prev("span").html(num);
+        });
+        $(".reduceBtn").click(function(){
+            var num = $(this).next("span").html();
+            num--;
+            if(num<2){
+                num = 1;
+            }
+            $(this).next("span").html(num);
+        });
 
-    //总价计算
+        //总价计算
 
         
     });
