@@ -48,6 +48,7 @@ $(function(){
 
     
     function fn(){
+        var _id = location.search.split("=")[1];
          // 左侧图片
         $(".smallImg").find("li").hover(function(){
             var _index = $(this).index();
@@ -73,9 +74,36 @@ $(function(){
 			$("#byNum").html(count);
 		});
 		
-		//加入购物车
-		
+        //加入购物车
+        if($.cookie("token")){
+		    $(".addToCart").click(function(){
+            // console.log("aa");
+            var arr = [{"gid":_id,"num":$("#byNum").html()}];
+            $.cookie(_id,JSON.stringify(arr));
+            $.get("http://47.104.244.134:8080/cartsave.do",{"gid":_id,token:$.cookie("token")},function(data){
+                // console.log(data,data.code);
+                if(data.code==0){
+                    alert("添加成功！");
+                    window.location.href="cart.html";
+                }else{
+                    alert("添加失败，请重试");
+                }
+                
+             
+            });
 
+
+
+
+
+
+
+
+        })
+        }else{
+            alert("请先登录再加入购物车！");
+            window.location.href="login.html";
+        }
     };
 
     

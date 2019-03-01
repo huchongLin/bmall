@@ -152,6 +152,7 @@
     border-radius: 5px;
     font-size: 18px;
     margin-right:20px; 
+    cursor: pointer;
 }
 .infoDatail .actions .click{
     border: none;
@@ -163,11 +164,11 @@
 
 
 
-/* 购物车角标 */
-.cart-count{
+/* /* 购物车角标 */
+/* .cart-count{
     left: 297px !important;
-}
-/* 购物车角标结束 */
+} */
+/* 购物车角标结束 */ */
 
 /* 清除浮动 */
 .clearfix:after {

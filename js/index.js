@@ -42,6 +42,7 @@ $(function(){
     $("#jiaobiao").css({"left":"50%","marginLeft":-$("#jiaobiao").width()/2});
     //先播一次
     $(".pic").find("li").eq(0).fadeIn()
+    //自动播
     var count = 0;
     var timer = setInterval(function(){
         count++
