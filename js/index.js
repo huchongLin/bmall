@@ -57,7 +57,7 @@ $(function(){
         $(".pic").find("li").eq(count).fadeIn()
         .siblings().fadeOut();
     },2000);
-
+    console.log("https://github.com/huchongLin/bmall");
     
 
 
